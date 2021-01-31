@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+const app = require('../app');
+
+const hostname = 'localhost';
+const port = 8888;
+
+const server = app.listen(port, hostname, () => {
+    console.log(`服务已开启: http://${hostname}:${port}`);
+})
